@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="gameControls">
+    <button id="leftButton"></button>
+    <button id="rightButton"></button>
+
+</div>
+<canvas id="gameCanvas"></canvas>
+<div id="gameOverScreen" style="display: none;">
+    <h1>Game Over!</h1>
+    <p>Your Score: <span id="finalScore">0</span></p>
+    <button onclick="restartGame()">Restart Game</button>
+</div>
+<img id="playerImage" src="center_frame1.png" alt="Player">
+<div id="background" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+    <img id="obstacleImage" src="asteroid.gif" alt="Obstacle" style="display: none;" />
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
